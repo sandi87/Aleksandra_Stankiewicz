@@ -1,0 +1,522 @@
+/*########### Defaults ###########*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --light: #FBFAE1;
+    --white: #fff;
+    --pink: #ff0000;
+    --orange: #fb830b;
+    --yellow: #e5e95d;
+    --darkGreen: #0B8457;
+    --darkerGreen: #055d44;
+    --grey: #555;
+    --gradient: linear-gradient(#70D4B4, #0B8457) --black: #000000;
+}
+
+body {
+    font-size: 18px;
+    font-family: "PT Serif", serif;
+    background-color: var(--light);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+a.site-nav-link {
+    text-align: center;
+}
+
+nav,
+div.container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Rouge Script', cursive;
+    font-size: 34px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: 300;
+    padding: 0;
+}
+
+.proffy {
+    font-family: "PT Serif", serif;
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    line-height: inherit;
+}
+
+div.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    color: var(--light);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: black;
+}
+
+.var {
+    color: var(--pink);
+}
+
+.nameVar {
+    color: var(--orange);
+}
+
+.text {
+    color: var(--yellow);
+}
+
+p {
+    color: var(--darkGreen);
+    text-align: center;
+}
+
+div.paragraph {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.newbox {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+}
+
+.picOne {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+    background-color: var(--white);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15),
+    0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.boxTwo {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: var(--white);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15),
+    0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+div.about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 30px;
+    right: 0;
+    left: 0;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--darkerGreen);
+    color: var(--white);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: var(--grey);
+}
+
+
+/*############### Nav bar ############*/
+
+nav {
+    width: 100%;
+    flex-wrap: wrap;
+    background: linear-gradient(#70D4B4, #0B8457);
+    ;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+nav,
+ul {
+    overflow: hidden;
+    margin: 0;
+}
+
+ul.nav-list {
+    list-style: none;
+    display: inline;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    min-height: 16px;
+    padding: 14px;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+
+ul.nav-list li {
+    display: inline-block;
+    text-decoration: none;
+    min-height: 16px;
+    /* to be sure that the navbar is easy to click no metter what size the browser is*/
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: black;
+}
+
+ul.nav-list li a:hover {
+    color: var(--white);
+}
+
+div.hamburgerIcon {
+    display: none;
+}
+
+div.left {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 1.2;
+    text-align: center;
+}
+
+div.right {
+    width: 60%;
+    text-align: right;
+    display: inline;
+    text-align: center;
+}
+
+ul.nav-list.row li a {
+    text-align: right;
+    text-align: center;
+}
+
+
+/*######## Projects #########*/
+
+.boxThree {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: var(--white);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15),
+    0 2px 3px 0 rgba(0, 0, 0, .1);
+    position: relative;
+    display: block;
+    width: 40%;
+    align-self: center;
+    overflow: hidden;
+}
+
+div.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+.picBox {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 100%
+}
+
+.projImg {
+    opacity: 1;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+div .projImg {
+    display: block;
+    width: 100%;
+}
+
+.description {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+}
+
+.boxThree:hover .projImg {
+    opacity: 0.3;
+}
+
+.boxThree:hover .description {
+    opacity: 1;
+}
+
+.desc {
+    background-color: #fff;
+    color: var(--darkGreen);
+    font-size: 16px;
+    padding: 0;
+    text-align: center;
+}
+
+.projName a {
+    display: flex;
+    text-align: center;
+}
+
+div.works,
+div.about {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+/*###### Footer #######*/
+
+.footsy {
+    background: linear-gradient(#70D4B4, #0B8457);
+    width: 100%;
+    overflow: hidden;
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+.socialIcon {
+    max-width: 100px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.main-footer-copyright {
+    color: var(--black);
+}
+
+/*########## Media ###########*/
+
+@media screen and (max-width: 500px) {
+    body,
+    .proffy,
+    p {
+        font-size: 15px;
+    }
+
+    div.box {
+        margin: 10px;
+        padding: 0;
+    }
+
+    code {
+        font-size: 16px;
+    }
+
+    .col-6 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .picBox {
+        display: none;
+    }
+
+    .boxThree {
+        width: 100%;
+    }
+
+    .col-3 {
+        width: 50%;
+    }
+
+    .socialIcon {
+        max-width: 40px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and ( max-width: 880px) {
+
+    ul.nav-list li {
+        display: none;
+    }
+
+    div.hamburgerIcon {
+        display: block;
+        position: absolute;
+        float: right;
+    }
+
+    #hamIcon {
+        position: absolute;
+        float: right;
+        padding: auto;
+        top: 40px;
+        right: 0;
+    }
+
+    div.name,
+    div.top-nav {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    ul.nav-list.responsive {
+        position: relative;
+    }
+
+    ul.nav-list.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.nav-list.responsive li a {
+        display: block;
+        text-align: center;
+    }
+
+    div.right,
+    div.left {
+        width: 100%;
+    }
+
+    .right {
+        justify-content: center;
+        float: center;
+        text-align: center;
+    }

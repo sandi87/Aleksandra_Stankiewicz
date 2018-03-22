@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Rouge+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio Aleksandra Stankiewicz</title>
+    <script src="scrpt.js"></script>
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="name left">
+            <h1>Aleksandra Stankiewicz</h1><br>
+            <span class="proffy">Junior Front End Developer</span></div>
+        <div class="top-nav right">
+            <ul class="nav-list row" id="onClick">
+                <li class="nav-item"><a class="site-nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="site-nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="site-nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="site-nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburgerIcon nav-item" id="hamIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></div>
+    </nav>
+    <div class="container col-12">
+        <div class="code" id="codeBoard">
+            <div class="paragraph">
+                <p>Shortly this is what I love:</p>
+            </div>
+            <div class="box">
+                <code>
+            1 <span class="var">var</span> <span class="nameVar">name</span> = <span class="text">"Aleksandra Stankiewicz"</span>;<br>
+ 2 <span class="var">var</span> <span class="nameVar">interest</span> = <span class="text">"coding"</span>;<br>
+ 3 <span class="var">var</span><span class="nameVar"> technologies</span> = [<span class="text">" HTML5", " CSS3", " JavaScript", " jQuery"</span>];<br>
+ 4 <span class="var">var</span> <span class="nameVar">awesomeMessage</span> = <span class="text">"Hi, my name is "</span> + name + <span class="text">". I love "</span> + <br>5 interest + <span class="text">". To my work I am using "</span> + technologies + <span class="text">". Still learning to be better!"</span>;<br>
+ 6 console.log(awesomeMessage);
+       <br>
+       <br>
+       Hi! My name is Aleksandra Stankiewicz. I love coding. To my work I am using HTML5, CSS3, JavaScript, jQuery.<br> Still learning to be better!
+        </code>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            </div>
+            <div class="paragraph">
+                <p>Yap this black background above with colorful lines of codes! Do you want to know me better? Just stay with me!</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="about">
+        <h2><a id="abouta" name="about">About Me</a></h2>
+    </div>
+    <div class="container col-12">
+        <div class="newbox col-12">
+            <div class="picBox col-6">
+                <div class="boxTwo">
+                    <img class="picOne" src="img/AleksandraStankiewicz.jpg" alt="my picture">
+                </div>
+            </div>
+            <div class="about col-6">
+                <div class="boxTwo ">
+                    <p>My friends call me Sandra and I hope we will be friends! I am a would-be Russellist, addicted to coffee mother, and a former individual entrepreneur. Last year before my 30 birthday I decided to change my path career and started learning how to code. Since then I achieved a lot, as for the beginner, I got Udacity Google Scholarship and after three months of hard work, I got to Nanodegree Front End Developer for next six months. For me, that is a huge success, because among 200k people I am in 3% applicant who made it! And this is just the beginning I know that I can do better and achieve more! Watch me! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="works">
+        <h2><a name="projects">My Projects</a></h2>
+    </div>
+    <div class="container col-12">
+        <div class="projects">
+            <div class="proj1 boxThree"><img class="projImg" id="dog" src="img/placeimg_300_150_animals.jpg" alt="animal trading card">
+                <div class="description">
+                    <div class="desc">
+                        <p class="projName"><a href="https://codepen.io/sandi_87/pen/qVqVJQ" target="_blank">Animal Trading Card</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="proj2 boxThree "><img class="projImg" src="img/pixel_art.png" alt="Pixel Art Maker">
+                <div class="description">
+                    <div class="desc">
+                        <p class="projName"><a href="https://codepen.io/sandi_87/pen/wpxVgz" target="_blank">Pixel Art Maker</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="proj3 boxThree "><img class="projImg" src="http://pipsum.com/300x150.jpg" alt="Awsome Project 3">
+                <div class="description">
+                    <div class="desc">
+                        <p class="projName"><a href="#" target="_blank">Awsome Project 3</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="proj4 boxThree"><img class="projImg" src="http://pipsum.com/300x150.jpg" alt="Awsome project 4">
+                <div class="description">
+                    <div class="desc">
+                        <p class="projName"><a href="#" target="_blank">Awsome Project 4</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footsy">
+        <div class="follow">
+            <h2><a name="contact">Let's keep in touch!</a></h2>
+        </div>
+        <div class="col">
+            <div class="col-3 contactMe"><a href="https://www.facebook.com/alex.stan87" target="_blank" class="fa facebook"><img class="socialIcon" src="img/Facebook.png" alt="facebook icon"></a></div>
+            <div class="col-3 contactMe"><a href="https://www.linkedin.com/in/aleksandra-stankiewicz/" target="_blank" class="fa linkedin"><img class="socialIcon" src="img/Linkedin.png" alt="LinkedIn icon"></a></div>
+            <div class="col-3 contactMe"><a href="https://www.instagram.com/sndrstank/" target="_blank" class="fa instagram"><img class="socialIcon" src="img/Instagram.png" alt="instagram icon"></a></div>
+            <div class="col-3 contactMe"><a href="https://github.com/sandi87" target="_blank" class="fa github"><img class="socialIcon" src="img/Github.png" alt="github icon"></a></div>
+        </div>
+        <div class="col-12">
+            <p class="main-footer-copyright"><small>&#169; 2018 Aleksandra Stankiewcz - Wszelkie prawa zastrzeżone</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>
